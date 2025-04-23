@@ -5,6 +5,7 @@ class User(db.Model):
 
     user_id = db.Column(db.Integer, primary_key=True)
     user_name = db.Column(db.String(50), nullable=False)
+    password = db.Column(db.String(128), nullable=False)
     email = db.Column(db.String(250), nullable=False, unique=True)
     mobile = db.Column(db.String(20))
     postcode = db.Column(db.String(10))
