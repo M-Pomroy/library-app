@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field-label {
+  width: 100%;
+  font-weight: 500;
+  text-align: left;
+}
+
+.field-textarea,
+.field-input {
+  height: 34px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.field-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.field-error {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}
+
+.field-error + .field-input,
+.field-error + .field-select {
+  border-color: red;
+}
+
+.field-group {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+}
+
+.field-group .field {
+  width: calc((100% - 40px) / 3);
+}
+
+.form-submit {
+  width: 150px;
+  margin-left: auto;
+}
