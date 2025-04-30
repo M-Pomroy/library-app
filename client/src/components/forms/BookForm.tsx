@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "../../axios";
@@ -9,7 +9,6 @@ const BookForm = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleSubmit = async () => {
-    console.log("submitting");
     setIsLoading(true);
 
     const newBook: Book = {
@@ -165,7 +164,10 @@ const BookForm = () => {
             ></textarea>
           </div>
 
-          <button type="submit" className="form-submit">
+          <button
+            type="submit"
+            className={`form-submit ${isLoading ? "loading-btn" : ""}`}
+          >
             Submit
           </button>
         </form>
