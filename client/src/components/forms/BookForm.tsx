@@ -166,7 +166,7 @@ const BookForm = () => {
 
           <button
             type="submit"
-            className={`form-submit ${isLoading ? "loading-btn" : ""}`}
+            className={`btn form-submit ${isLoading ? "loading-btn" : ""}`}
           >
             Submit
           </button>

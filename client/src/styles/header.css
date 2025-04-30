@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 5px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.account-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.account-btn img {
+  height: 20px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .logo {
+    height: 55px;
+  }
+}

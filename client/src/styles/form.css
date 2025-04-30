@@ -48,15 +48,21 @@
 
 .field-group {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   gap: 20px;
-}
-
-.field-group .field {
-  width: calc((100% - 40px) / 3);
 }
 
 .form-submit {
   width: 150px;
   margin-left: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .field-group {
+    flex-direction: row;
+  }
+
+  .field-group .field {
+    width: calc((100% - 40px) / 3);
+  }
 }
